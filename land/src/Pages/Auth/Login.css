@@ -1,0 +1,65 @@
+/* Full screen background with an image */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url('https://your-image-url.com/image.jpg') no-repeat center center fixed; */
+    background-size: cover; /* Make sure the background covers the full screen */
+    position: relative;
+  }
+  
+  .login-form-container {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 2; /* Ensure form is above the background */
+  }
+  
+  h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+    color: #e1d3d3;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .form-control::placeholder {
+    color: #333;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: rgb(154, 119, 119);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .alert {
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .login-form-container {
+      padding: 20px;
+    }
+  }
+  

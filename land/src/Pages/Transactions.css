@@ -1,0 +1,82 @@
+.transactions-page {
+  margin-left: 250px; /* Adjust based on your sidebar width (make sure it's more than the sidebar width) */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 10px; /* Rounded corners for the page */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left initially */
+}
+
+.transactions-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker text color for the title */
+  font-family: 'Arial', sans-serif;
+  font-size: 2rem;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Space between the buttons */
+  margin-bottom: 20px; /* Space below the buttons */
+}
+
+.table-container {
+  width: 100%; /* Take up the full available width */
+  overflow-x: auto; /* Allow horizontal scrolling if the table is too wide */
+}
+
+.table {
+  width: 100%; /* Ensure the table takes up full width of its container */
+  background-color: #fff; /* White background for the table */
+  border-radius: 10px; /* Rounded corners for the table */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.table th {
+  background-color: #3498db; /* Blue background for the header */
+  color: white; /* White text for the header */
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.table td {
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.table tbody tr:hover {
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  cursor: pointer;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alert {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: #e74c3c; /* Red background for errors */
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .transactions-page {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .table th, .table td {
+    font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+  }
+}

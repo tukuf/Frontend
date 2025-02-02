@@ -1,0 +1,14 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h2>Transaction Successful!</h2>
+  <p>Congratulations! Your transaction for the land <strong>{{ transaction.land.title }}</strong> was successful.</p>
+  
+  <p><strong>Land Location:</strong> {{ transaction.land.location }}</p>
+  <p><strong>Price:</strong> Tsh {{ transaction.final_price }}</p>
+  
+  <p>Thank you for your purchase. A confirmation has been sent to your email or phone.</p>
+
+  <!-- Optionally, you can include a button to go back to the homepage or transaction history -->
+  <a href="/">Go to Dashboard</a>
+{% endblock %}

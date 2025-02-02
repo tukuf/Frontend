@@ -1,0 +1,55 @@
+/*import React from 'react'
+import 
+
+function Home() {
+    const [count, SetCount] = useState(0);
+
+    const startcount = () => {
+        SetCount(Count+1);
+
+};
+
+
+return (
+    <div>
+    
+    <h1> Count {count}</h1>
+    <button onVlick
+    </div>
+
+)
+
+}*\
+/* Home.css */
+.home-container {
+  background-color: #f4f4f9;
+  padding: 50px 0;
+}
+
+.hero {
+  background-color: #008080;
+  color: white;
+  padding: 80px 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.hero .btn {
+  background-color: #ff5733;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.hero .btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,71 @@
+/* Full screen background with a dark color */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #537595; /* Dark background color */
+  position: relative;
+}
+
+/* Dark semi-transparent form container */
+.register-form-container {
+  background-color: rgba(69, 116, 203, 0.7); /* Dark semi-transparent background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  z-index: 2; /* Ensure form is above the background */
+}
+
+/* Title Styling */
+h2 {
+  color: #ced421;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input Fields */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.8); /* Light background for inputs */
+  color: #ad9a9a;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+/* Placeholder color */
+.form-control::placeholder {
+  color: #555555;
+}
+
+/* Button Styling */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Alert Message Styling */
+.alert {
+  margin-bottom: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .register-form-container {
+      padding: 20px;
+  }
+}

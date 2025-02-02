@@ -1,0 +1,64 @@
+.upload-form-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+  background-attachment: fixed; /* Fix the background image while scrolling */
+}
+background
+.upload-form-container h2 {
+  color: #000000; /* Black color for heading */
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.upload-form-container label {
+  color: #000000; /* Black color for labels */
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.upload-form-container input[type="number"], 
+.upload-form-container input[type="text"], 
+.upload-form-container textarea, 
+.upload-form-container select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  color: #000000; /* Black color for input text */
+}
+
+.upload-form-container input[type="number"] {
+  height: 40px;
+}
+
+.upload-form-container textarea {
+  height: 80px;
+}
+
+.upload-form-container button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.upload-form-container button:hover {
+  background-color: #2980b9;
+}
