@@ -11,7 +11,7 @@ class Reviews extends Component {
   }
 
   componentDidMount() {
-    fetch('http://127.0.0.1:8000/api/reviews/')
+    fetch('https://backend-gqfp.onrender.com/api/reviews/')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

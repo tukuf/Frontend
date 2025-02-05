@@ -20,7 +20,7 @@ const Transactions = () => {
   useEffect(() => {
     // Fetch transactions from API
     axios
-      .get("http://127.0.0.1:8000/api/transaction/")
+      .get("https://backend-gqfp.onrender.com/api/transaction/")
       .then((response) => {
         setTransactions(response.data); // Set transactions data
         setLoading(false); // Stop loading spinner
@@ -43,7 +43,7 @@ const Transactions = () => {
 
     // Send POST request to add a new transaction
     axios
-      .post("http://127.0.0.1:8000/api/transaction/", formattedTransaction)
+      .post("https://backend-gqfp.onrender.com/api/transaction/", formattedTransaction)
       .then((response) => {
         setTransactions([...transactions, response.data]); // Add the new transaction to the list
         setShowAddModal(false); // Close the modal
@@ -63,7 +63,7 @@ const Transactions = () => {
   const handleDeleteTransaction = (id) => {
     // Send DELETE request to remove a transaction
     axios
-      .delete(`http://127.0.0.1:8000/api/transaction/${id}/`)
+      .delete(`https://backend-gqfp.onrender.com/api/transaction/${id}/`)
       .then(() => {
         // Remove the transaction from the state list
         setTransactions(transactions.filter((transaction) => transaction.id !== id));

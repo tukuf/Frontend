@@ -23,7 +23,7 @@ function Login({ setIsLoggedIn }) {
     }
 
     try {
-      const API_URL = 'http://127.0.0.1:8000/api';
+      const API_URL = 'https://backend-gqfp.onrender.com/api';
       const response = await axios.post(`${API_URL}/login/`, { username, password });
       const { access, refresh } = response.data;
 

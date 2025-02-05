@@ -19,7 +19,7 @@ function Register() {
     setError('');
 
     try {
-      await axios.post("http://127.0.0.1:8000/api/user/", {
+      await axios.post("https://backend-gqfp.onrender.com/api/user/", {
         username,
         password,
         user_type: userType, // ✅ Hii sasa inatumia userType badala ya user_type

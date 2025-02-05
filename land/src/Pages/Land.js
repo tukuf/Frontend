@@ -88,7 +88,7 @@ const BuyLand = () => {
   useEffect(() => {
     const fetchLands = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/land/");
+        const response = await axios.get("https://backend-gqfp.onrender.com/api/land");
         setLands(response.data);
       } catch (err) {
         setError("Error fetching lands. Please try again.");
@@ -119,7 +119,7 @@ const BuyLand = () => {
             <p>{land.size} cm²</p>
             <p>{land.price} Tsh</p>
             <img
-              src={`http://127.0.0.1:8000${land.image}`}
+              src={`https://backend-gqfp.onrender.com${land.image}`}
               alt={land.title}
               className="land-image"
             />

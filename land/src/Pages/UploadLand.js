@@ -194,7 +194,7 @@ const UploadLand = () => {
 
     try {
     console.log("Fetching user details...");
-    const userResponse = await axios.get("http://127.0.0.1:8000/api/user/", {
+    const userResponse = await axios.get("https://backend-gqfp.onrender.com/api/user/", {
         headers: { Authorization: `Bearer ${token}` },
     });
 
@@ -223,7 +223,7 @@ const UploadLand = () => {
         formData.append("listed_by", userId);  // ✅ Ongeza listed_by
 
         // **3. Tuma Land kwa API**
-        const response = await axios.post("http://127.0.0.1:8000/api/land/", formData, {
+        const response = await axios.post("https://backend-gqfp.onrender.com/api/land/", formData, {
             headers: { Authorization: `Bearer ${token}` },
         });
 
